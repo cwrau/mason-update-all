@@ -6,8 +6,6 @@ local function check_done(running_count, any_update)
     if running_count == 0 then
         if any_update then
             print('[mason-update-all] Finished updating all packages')
-        else
-            print('[mason-update-all] Nothing to update')
         end
 
         -- Trigger autocmd
